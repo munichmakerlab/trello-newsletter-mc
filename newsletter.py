@@ -59,6 +59,10 @@ def getTrelloCards():
     cards = lists[0].list_cards()
 
     debug_out("List found, with %s cards" % len(cards))
+    
+    if len(cards) == 0:
+        print("Not sending empty newsletter")
+        exit(1)
 
     return cards
 
@@ -88,7 +92,7 @@ def sendNewsletter(items, newsletter_type):
         })
         # print(response)
         campaign_id = response["id"]
-        debug_out("Mailchimp Campaign: %s / %s" % (campaign_id, response["web_id"])
+        debug_out("Mailchimp Campaign: %s / %s" % (campaign_id, response["web_id"]))
 
         response = client.campaigns.get_content(campaign_id)
         soup = BeautifulSoup(response["html"], "html.parser")

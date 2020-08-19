@@ -1,0 +1,20 @@
+# Trello API connection
+api_key='TRELLO_API_KEY'
+api_secret='TRELLO_API_SECRET'
+token='TRELLO_OAUTH_TOKEN'
+token_secret='TRELLO_OAUTH_SECRET
+
+# what to look for
+org_name = "mumalab"
+brd_name = "Newsletter"
+
+debug = True
+
+mailchimp_api_key = "MAILCHIMP_API_KEY"
+mailchimp_server = "MAILCHIMP_SERVER"
+mailchimp_template_id = MAILCHIMP_TEMPLATE_ID
+mailchimp_list_id = "MAILCHIMP_LIST_ID"
+
+MAIL_TO_PREVIEW = "newsletter@munichmakerlab.de"
+MAIL_FROM = "newsletter@munichmakerlab.de"
+MAIL_FROM_NAME = "MuMaBot"

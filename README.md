@@ -6,7 +6,7 @@ This is the second iteration of https://github.com/munichmakerlab/trello-newslet
 
 ## Mailchimp setup
 
-We require a Mailchimp template that serves as the basis of the newsletter. Create a template, and in that create a normal Text block, with a "%TITLE%" and "%CONTENT%" placeholder. That text block will be replicated and the placeholders replaced with the texts from trello.
+We require a Mailchimp template that serves as the basis of the newsletter. Create a template, and in that create a normal Text block, with a ``%TITLE%`` and ``%CONTENT%`` placeholder. That text block will be replicated and the placeholders replaced with the texts from trello.
 
 ## Trello Setup
 
@@ -49,4 +49,4 @@ python newsletter.py final
 ```
 
 ## License
-Licensed under MIT license. See <LICENSE> for details.
+Licensed under MIT license. See [LICENSE](LICENSE) for details.
